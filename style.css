@@ -58,6 +58,12 @@ header {
     left: 40px;
     width: 180px;
     height: auto;
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave para el logo */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Zoom suave al logo */
+    filter: brightness(1.1); /* Brillo sutil */
 }
 
 .titulo_web {
@@ -106,7 +112,6 @@ nav {
 .menu a:hover {
     background-color: rgba(65, 83, 102, 0.95);
     border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .submenu {
@@ -146,6 +151,7 @@ main {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: #d1d5db;
+    animation: entrada_suave 0.8s ease-out; /* Animación de entrada suave */
 }
 
 .contenido_principal h2 {
@@ -289,6 +295,12 @@ main {
     border-radius: 4px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s ease; /* Transición para la imagen */
+}
+
+/* Zoom suave en la imagen al hacer hover */
+.personaje_img img:hover {
+    transform: scale(1.05);
 }
 
 /* 
@@ -300,7 +312,12 @@ main {
     max-width: 170px;
     height: auto;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
-    transition: transform 0.4s ease, filter 0.4s ease;
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+.logo_poder:hover {
+    transform: scale(1.1); /* Agranda ligeramente al pasar el ratón */
+    filter: drop-shadow(0 0 25px rgba(200, 220, 255, 0.35));
 }
 
 .contenedor_logo_poder {
@@ -356,6 +373,11 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Transición suave para el mapa/ciudad */
+}
+
+.img_contenedor_centrado:hover .img_full_cover {
+    transform: scale(1.08); /* Zoom sutil al contenedor del mapa */
 }
 
 .titulo_seccion {
@@ -368,6 +390,12 @@ main {
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Para las imágenes de historia */
+}
+
+.img_sombra:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
 }
 
 .imagen_destacada {
@@ -509,7 +537,6 @@ main {
 
 .formulario_contacto button[type="submit"]:hover {
     background-color: #5c8bbf;
-    transform: translateY(-2px);
 }
 
 .formulario_contacto button[type="reset"] {
@@ -575,6 +602,13 @@ main {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    /* Parte contacto */
+    .formulario_contacto {
+        padding: 20px;
+    }
+}
+
 
     /* Parte contacto */
     .formulario_contacto {
