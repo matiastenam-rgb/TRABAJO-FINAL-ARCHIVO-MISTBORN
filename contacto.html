@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Mistborn | Contacto</title>
+    <meta name="description" content="Contacta con nosotros para mejorar el Archivo Mistborn.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecera_superior">
+            <img src="img/log_mistborn.png" alt="Logo de Archivo Mistborn" class="logo">
+            <div class="titulo_web">
+                <h1>Archivo Mistborn</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="menu">
+
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="mundo.html">Mundo</a></li>
+
+                <li class="menu_desplegable">
+                    <a href="#">Historia</a>
+                    <ul class="submenu">
+                        <li><a href="historia-era1.html">Era 1</a></li>
+                        <li><a href="historia-era2.html">Era 2</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_desplegable">
+                    <a href="#">Poderes</a>
+                    <ul class="submenu">
+                        <li><a href="alomancia.html">Alomancia</a></li>
+                        <li><a href="feruquimia.html">Feruquimia</a></li>
+                        <li><a href="hemalurgia.html">Hemalurgia</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_desplegable">
+                    <a href="#">Personajes</a>
+                    <ul class="submenu">
+                        <li><a href="personajes-era1.html">Era 1</a></li>
+                        <li><a href="personajes-era2.html">Era 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="simbolos.html">Símbolos</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenido_principal">
+            <h2>Contacto</h2>
+            <!-- Req 7: Formulario con caja de texto, lista select, área de texto, botones, checkbox y radio -->
+            <form action="#" method="post" class="formulario_contacto">
+                
+                <!-- Caja de texto: Nombre completo -->
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required pattern="[A-Za-záéíóú'\s]+" title="El nombre solo puede contener letras y espacios">
+                </div>
+
+                <!-- Caja de texto: Correo electrónico -->
+                <div>
+                    <label>Correo electrónico:</label>
+                    <input type="email" name="correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" title="La contraseña ha de tener @ y un dominio valido, incluye el pattern">
+                </div>
+
+                <!-- Lista select: Apartado favorito -->
+                <div>
+                    <label>¿Cuál ha sido tu apartado favorito?</label>
+                    <select name="favorito" required>
+                        <option value="mundo">El Mundo de Mistborn</option>
+                        <option value="historia">Historia (Era 1 y 2)</option>
+                        <option value="poderes">Sistemas de Magia</option>
+                        <option value="personajes">Personajes destacados</option>
+                        <option value="simbolos">Símbolos y Signos</option>
+                    </select>
+                </div>
+
+                <!-- Área de texto: Opinión -->
+                <div>
+                    <label>Deje su opinion sobre la pagina web:</label>
+                    <textarea name="opinion" rows="5" required></textarea>
+                </div>
+
+                <!-- Checkboxes: Intereses -->
+                <fieldset>
+                    <legend>Contenido que te gustaría ver más en la web:</legend>
+                    <div class="opcion_checkbox">
+                        <input type="checkbox" name="intereses" value="analisis">
+                        <label>Análisis de personajes</label>
+                    </div>
+                    <div class="opcion_checkbox">
+                        <input type="checkbox" name="intereses" value="poderes">
+                        <label>Explicación de poderes</label>
+                    </div>
+                    <div class="opcion_checkbox">
+                        <input type="checkbox" name="intereses" value="historia">
+                        <label>Historia del mundo</label>
+                    </div>
+                </fieldset>
+
+                <!-- Radio Buttons: Arte de metalurgia favorita -->
+                <fieldset>
+                    <legend>¿Cuál es tu arte de metalurgia favorita?</legend>
+                    <div class="opcion_radio">
+                        <input type="radio" name="arte_favorito" value="alomancia" required>
+                        <label>Alomancia</label>
+                    </div>
+                    <div class="opcion_radio">
+                        <input type="radio" name="arte_favorito" value="feruquimia">
+                        <label>Feruquimia</label>
+                    </div>
+                    <div class="opcion_radio">
+                        <input type="radio" name="arte_favorito" value="hemalurgia">
+                        <label>Hemalurgia</label>
+                    </div>
+                </fieldset>
+
+                <!-- Botones de acción: Enviar y Limpiar -->
+                <div class="botones_formulario">
+                    <button type="submit">Enviar informacion</button>
+                    <button type="reset">Limpiar informacion</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
