@@ -574,12 +574,16 @@ main {
         flex-direction: column;
         gap: 5px;
     }
+    .
     .submenu {
         position: relative;
         top: 0;
         left: 0;
         width: 100%;
         text-align: center;
+        display: block; /* Muestra el submenú siempre en móvil ya que no hay 'hover' real */
+        border: none; /* Opcional: Para que se integre mejor sin bordes raros */
+        background-color: transparent; /* Se integra en el fondo del menú */
     }
 
     .contenido_principal {
