@@ -574,16 +574,22 @@ main {
         flex-direction: column;
         gap: 5px;
     }
-    .
+
     .submenu {
         position: relative;
         top: 0;
         left: 0;
         width: 100%;
         text-align: center;
-        display: block; /* Muestra el submenú siempre en móvil ya que no hay 'hover' real */
-        border: none; /* Opcional: Para que se integre mejor sin bordes raros */
-        background-color: transparent; /* Se integra en el fondo del menú */
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding-top: 5px;
+    }
+
+    .submenu a {
+        padding: 10px;
+        font-size: 15px;
     }
 
     .contenido_principal {
@@ -599,6 +605,15 @@ main {
     /* Parte mundo */
     .contenido_principal.layout_mundo {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .layout_mundo > div {
+        padding: 25px 15px;
+    }
+
+    .layout_mundo > .img_contenedor_centrado {
+        padding: 0 !important;
     }
 
     /* Parte personajes */
@@ -619,3 +634,5 @@ main {
         padding: 20px;
     }
 }
+
+
